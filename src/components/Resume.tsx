@@ -64,7 +64,7 @@ const Resume = () => {
                 B.Tech Computer Science Engineering
               </h4>
               <p className="text-muted-foreground">PDEU Gandhinagar</p>
-              <p className="text-2xl font-bold text-accent">CGPA: 9.87</p>
+              <p className="text-2xl font-bold text-accent">CGPA: 9.87<small>(Till 4<sup>th</sup> Sem)</small></p>
             </div>
 
             <div className="glass-card-hover p-6 rounded-2xl space-y-2">
@@ -77,13 +77,13 @@ const Resume = () => {
 
             <div className="glass-card-hover p-6 rounded-2xl space-y-2">
               <h4 className="text-xl font-heading font-bold text-primary">Class 12 (2023)</h4>
-              <p className="text-muted-foreground">Shree Swaminarayan Vidhya Sankul</p>
+              <p className="text-muted-foreground">Gujarat Board</p>
               <p className="text-2xl font-bold text-accent">88.39%ile</p>
             </div>
 
             <div className="glass-card-hover p-6 rounded-2xl space-y-2">
               <h4 className="text-xl font-heading font-bold text-secondary">Class 10 (2021)</h4>
-              <p className="text-muted-foreground">K.R. Raval School</p>
+              <p className="text-muted-foreground">Gujarat Board</p>
               <p className="text-2xl font-bold text-accent">99.37%ile</p>
             </div>
           </div>
@@ -205,7 +205,6 @@ const Resume = () => {
           <div className="glass-card p-8 rounded-2xl">
             <div className="flex flex-wrap gap-4 justify-center">
               {[
-                "Designing",
                 "AI Tools Exploration",
                 "Machine Learning",
                 "Data Visualization",

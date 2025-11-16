@@ -2,10 +2,10 @@ import { useEffect, useRef } from "react";
 import { GraduationCap, Target, Users, Lightbulb } from "lucide-react";
 
 const timelineEvents = [
-  { year: "2021", event: "Class 10 Excellence", detail: "99.37%ile - K.R. Raval School" },
-  { year: "2023", event: "Class 12 Achievement", detail: "88.39%ile - Shree Swaminarayan" },
+  { year: "2021", event: "Class 10 Excellence", detail: "99.37%ile - Gujarat Board" },
+  { year: "2023", event: "Class 12 Achievement", detail: "88.39%ile - Gujarat Board" },
   { year: "2023", event: "JEE Main Success", detail: "96.7 %ile" },
-  { year: "2025", event: "B.Tech Journey", detail: "CGPA 9.87 - PDEU Gandhinagar" },
+  { year: "2025", event: "B.Tech Journey", detail: "CGPA 9.87(Till 4th Sem) - PDEU Gandhinagar" },
   { year: "2027", event: "Future Vision", detail: "Aspiring Data Scientist" },
 ];
 
