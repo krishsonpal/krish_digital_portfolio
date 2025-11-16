@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Glassmorphic Dark Portfolio Theme */
+    --background: 228 48% 8%;
+    --background-end: 228 35% 14%;
+    --foreground: 0 0% 98%;
+
+    --glass: 0 0% 100% / 0.08;
+    --glass-border: 0 0% 100% / 0.15;
+    
+    --card: 0 0% 100% / 0.08;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 228 48% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Neon accents */
+    --primary: 187 100% 50%;
+    --primary-foreground: 228 48% 8%;
+    --primary-glow: 187 100% 50% / 0.4;
+
+    --secondary: 258 90% 66%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-glow: 258 90% 66% / 0.4;
+
+    --accent: 173 80% 40%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 173 80% 40% / 0.4;
+
+    --muted: 0 0% 100% / 0.05;
+    --muted-foreground: 0 0% 70%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 100% / 0.1;
+    --input: 0 0% 100% / 0.1;
+    --ring: 187 100% 50%;
+
+    --radius: 1rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(187 100% 50%), hsl(258 90% 66%));
+    --gradient-accent: linear-gradient(135deg, hsl(258 90% 66%), hsl(173 80% 40%));
+    --gradient-background: linear-gradient(180deg, hsl(228 48% 8%), hsl(228 35% 14%));
+    
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow)), 0 0 80px hsl(var(--primary-glow));
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gradient-to-b from-[hsl(228,48%,8%)] to-[hsl(228,35%,14%)] text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', 'Poppins', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/[0.08] backdrop-blur-xl border border-white/[0.15] shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300 hover:bg-white/[0.12] hover:-translate-y-1 hover:shadow-[0_0_40px_hsl(var(--primary-glow))];
+  }
+
+  .neon-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-[hsl(187,100%,50%)] via-[hsl(258,90%,66%)] to-[hsl(173,80%,40%)];
+  }
+
+  .neon-border {
+    @apply border-2 border-transparent bg-gradient-to-r from-[hsl(187,100%,50%)] via-[hsl(258,90%,66%)] to-[hsl(173,80%,40%)] bg-clip-border;
+  }
+
+  .glow-primary {
+    text-shadow: 0 0 20px hsl(var(--primary-glow)), 0 0 40px hsl(var(--primary-glow));
+  }
+
+  .glow-secondary {
+    text-shadow: 0 0 20px hsl(var(--secondary-glow)), 0 0 40px hsl(var(--secondary-glow));
+  }
+
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
