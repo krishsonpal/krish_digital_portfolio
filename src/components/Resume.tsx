@@ -40,7 +40,7 @@ const Resume = () => {
           </h2>
           {/* View Resume Button - Placed centrally below the title for prominence */}
           <a
-            href="public\krish_resume.pdf" // Fake link: Replace with actual resume link
+            href="https://drive.google.com/file/d/1Q-EKc9sKIPmzhCnTnO_t6f_1Zk9eLBNn/view?usp=sharing" // Fake link: Replace with actual resume link
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 border-2 border-primary text-primary font-bold rounded-full transition-all duration-300 hover:bg-primary/20 hover:shadow-lg hover:shadow-primary/50 reveal"

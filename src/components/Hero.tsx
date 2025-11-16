@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Download, Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 const PLACEHOLDERS = {
-  PHOTO_URL: "public\\krish photo.jpeg",
-  RESUME_URL: "public\\krish_resume.pdf",
+  PHOTO_URL: "public\\krish_photo.png",
+  RESUME_URL: "https://drive.google.com/file/d/1Q-EKc9sKIPmzhCnTnO_t6f_1Zk9eLBNn/view?usp=sharing",
   GITHUB_URL: "https://github.com/krishsonpal",
   LINKEDIN_URL: "https://www.linkedin.com/in/krish-sonpal-33bab52a7/",
   EMAIL: "krishsonpal21@gmail.com",
