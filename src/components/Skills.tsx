@@ -143,7 +143,7 @@ export default function Skills(): JSX.Element {
       className="py-20 px-4 bg-gradient-to-b from-black/40 to-black/25"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-12 text-white reveal">
+        <h2 className="text-4xl md:text-5xl font-heading font-bold text-center mb-16 neon-text reveal">
           Advanced Skill Development
         </h2>
 
