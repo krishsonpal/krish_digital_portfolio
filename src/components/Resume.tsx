@@ -181,20 +181,7 @@ const Resume = () => {
         </div>
 
         {/* ------------------------ NEW SECTION: EXTRA CERTIFICATIONS ------------------------ */}
-        <div className="mb-16 reveal">
-          <div className="flex items-center gap-3 mb-6">
-            <Award className="w-8 h-8 text-accent" />
-            <h3 className="text-3xl font-heading font-semibold">Additional Certifications</h3>
-          </div>
-
-          <div className="glass-card p-6 rounded-2xl space-y-3">
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Harvard – CS50 Python</li>
-              <li>• Harvard – CS50 Computer Science</li>
-            </ul>
-          </div>
-        </div>
-
+        
         {/* ------------------------ HOBBIES ------------------------ */}
         <div className="reveal">
           <div className="flex items-center gap-3 mb-8">
